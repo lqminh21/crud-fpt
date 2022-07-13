@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="index.js"></script> -->
+    <title>Personal Information</title>
+    <style>
+        .sub-form{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <form id="form-info"  method="POST" action="/add">
+            <div class="sub-form">
+                <p>
+                    <label for="name">Name: </label>
+                    <input type="text" name="Name"></input>
+                </p>
+            </div>
+            <div class="sub-form">
+                <p>
+                    <label for="age">Age: </label>
+                    <input type="number" name="Age" style="width: 25px"</input>
+                </p>
+            </div>
+            <div class="sub-form">
+                <p>
+                    <label for="sex">Sex: </label>
+                    <label>Sex</label>
+                        <select class="form-select form-control" name="Sex">
+                                <option selected>Open this select menu</option>
+                                <option value="Male">Male</option>
+                                <option value="Famale">Famale</option>
+                        </select>
+                </p>
+            </div>
+            <div class="sub-form">
+                <p>
+                    <label for="birthday">Birthday: </label>
+                    <input type="date" name="Birthday"></input>
+                </p>
+            </div>
+            <div class="sub-form">
+                <p>
+                    <label for="email">Email: </label>
+                    <input type="text" name="Email"></input>
+                </p>
+            </div>
+            <div class="sub-form">
+                <p>
+                    <label for="address">Address</label>
+                    <input type="text" name="Address"></input>
+                </p>
+            </div>
+            <div class="sub-form">
+                {{!-- <form action="/add" method="post"> --}}
+                    <button class="button-form" type="submit" onclick="">ADD</button>
+                {{!-- </form> --}}
+                {{!-- <form action="/update" method="post">
+                    <button class="button-form" type="button" onclick="">UPDATE</button>
+                </form>
+                <form action="/delete" method="post">
+                    <button class="button-form" type="button" onclick="">DELETE</button>
+                </form>
+                 --}}
+            </div>   
+        </form>
+    </div>
+</body>
+</html>
+
+
+{{!-- <input class="button-form" type="button" value="ADD"></input>
+<input class="button-form" type="button" value="EDIT"></input>
+<input class="button-form" type="button" value="DELETE"></input> --}}
