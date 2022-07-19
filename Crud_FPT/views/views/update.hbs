@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="index.js"></script> -->
+    <title>Personal Information</title>
+    <style>
+        .sub-form{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <form id="form-info"  method="POST">
+            <div class="sub-form">
+                <p>
+                    <label for="id">ID: </label>
+                    <input type="text" name="ID"></input>
+                </p>
+            </div>
+            <div class="sub-form">
+                <p>
+                    <label for="name">Name: </label>
+                    <input type="text" name="Name"></input>
+                </p>
+            </div>
+            <div class="sub-form">
+                <p>
+                    <label for="age">Age: </label>
+                    <input type="text" name="Age" style="width: 25px"</input>
+                </p>
+            </div>
+            <div class="sub-form">
+                <p>
+                    <label for="sex">Sex: </label>
+                    <input type="text" name="Sex" style="width: 25px"></input>
+                </p>
+            </div>
+            <div class="sub-form">
+                <p>
+                    <label for="birthday">Birthday: </label>
+                    <input type="date" name="Birthday"></input>
+                </p>
+            </div>
+            <div class="sub-form">
+                <p>
+                    <label for="email">Email: </label>
+                    <input type="text" name="Email"></input>
+                </p>
+            </div>
+            <div class="sub-form">
+                <p>
+                    <label for="address">Address</label>
+                    <input type="text" name="Address"></input>
+                </p>
+            </div>
+            <div class="sub-form">
+                {{!-- <form action="/add" method="post">
+                    <button class="button-form" type="submit" onclick="">ADD</button>
+                </form>
+                <form action="/delete" method="post">
+                    <button class="button-form" type="button" onclick="">DELETE</button>
+                </form> --}}
+                <form action="/update" method="post">
+                    <button class="button-form" type="submit" onclick="">UPDATE</button>
+                </form>
+            </div>   
+        </form>
+    </div>
+</body>
+</html>
+
+
+{{!-- <input class="button-form" type="button" value="ADD"></input>
+<input class="button-form" type="button" value="EDIT"></input>
+<input class="button-form" type="button" value="DELETE"></input> --}}
